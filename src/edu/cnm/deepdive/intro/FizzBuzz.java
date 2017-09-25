@@ -39,14 +39,13 @@ public class FizzBuzz {
     }
     if (value % 5 == 0) {
       result +=  "buzz";
-    }
-    if(result.isEmpty()) {
+    //if(result.isEmpty()) {
       //result = Integer.toString(value);
       //result = ""+ value;
       //result = String.format("%d", value);
-      result += value;
+      //result += value;
     }
-    return result;
+    return result.isEmpty() ? Integer.toString(value) : result;
   }
 
 }
